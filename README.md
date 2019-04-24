@@ -4,8 +4,17 @@ An Arduino Leonardo shield to simplify the wiring of SFX-100 serial port connect
 For more information about the SFX-100 project, please visit:
 https://opensfx.com/
 
+The "Group Buy Edition" is the latest and greatest.
+
+The prototype works fine and uses the RJ45 connector for the E-stop instead of a screw terminal.
+
 
 Releases
+========
+v1.35 April 24, 2019
+A small modification to allow support for external power supplies higher than +5v. Not really necessary for our use case as powering by USB works fine and is typical for this application. But just in case someone out there does it differently for some reason. :)
+
+
 ========
 v1.34 April 6, 2019
 Group buy edition
