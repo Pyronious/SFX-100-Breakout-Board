@@ -175,31 +175,12 @@
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="VCC" urn="urn:adsk.eagle:symbol:26928/1" library_version="1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VCC" urn="urn:adsk.eagle:component:26957/1" prefix="P+" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="VCC" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1711,16 +1692,11 @@ D = Direct mounting &lt;p&gt;
 </classes>
 <parts>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="MOTOR1" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F25" device="V" package3d_urn="urn:adsk.eagle:package:10290/1"/>
 <part name="MOTOR2" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F25" device="V" package3d_urn="urn:adsk.eagle:package:10290/1"/>
 <part name="MOTOR3" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F25" device="V" package3d_urn="urn:adsk.eagle:package:10290/1"/>
 <part name="MOTOR4" library="con-subd" library_urn="urn:adsk.eagle:library:189" deviceset="F25" device="V" package3d_urn="urn:adsk.eagle:package:10290/1"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -1740,9 +1716,6 @@ D = Direct mounting &lt;p&gt;
 <instance part="GND9" gate="1" x="35.56" y="-33.02" smashed="yes">
 <attribute name="VALUE" x="33.02" y="-35.56" size="1.778" layer="96"/>
 </instance>
-<instance part="P+5" gate="VCC" x="45.72" y="-33.02" smashed="yes" rot="R180">
-<attribute name="VALUE" x="45.72" y="-35.56" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="MOTOR1" gate="-1" x="114.3" y="109.22" smashed="yes" rot="R90">
 <attribute name="VALUE" x="135.89" y="105.41" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="94.615" y="105.41" size="1.778" layer="95" rot="R90"/>
@@ -1761,18 +1734,6 @@ D = Direct mounting &lt;p&gt;
 </instance>
 <instance part="GND1" gate="1" x="33.02" y="53.34" smashed="yes" rot="R180">
 <attribute name="VALUE" x="35.56" y="55.88" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="P+1" gate="VCC" x="-40.64" y="91.44" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="-43.18" y="93.98" size="1.778" layer="96" rot="MR270"/>
-</instance>
-<instance part="P+2" gate="VCC" x="12.7" y="91.44" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="10.16" y="93.98" size="1.778" layer="96" rot="MR270"/>
-</instance>
-<instance part="P+3" gate="VCC" x="66.04" y="91.44" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="63.5" y="93.98" size="1.778" layer="96" rot="MR270"/>
-</instance>
-<instance part="P+4" gate="VCC" x="119.38" y="91.44" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="116.84" y="93.98" size="1.778" layer="96" rot="MR270"/>
 </instance>
 <instance part="GND2" gate="1" x="-60.96" y="124.46" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-58.42" y="127" size="1.778" layer="96" rot="R180"/>
@@ -1807,35 +1768,6 @@ D = Direct mounting &lt;p&gt;
 <busses>
 </busses>
 <nets>
-<net name="VCC" class="0">
-<segment>
-<wire x1="55.88" y1="-15.24" x2="55.88" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-22.86" x2="45.72" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="45.72" y1="-22.86" x2="45.72" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VIN"/>
-</segment>
-<segment>
-<pinref part="MOTOR3" gate="-1" pin="9"/>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="12.7" y1="101.6" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="MOTOR2" gate="-1" pin="9"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="66.04" y1="101.6" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="MOTOR1" gate="-1" pin="9"/>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-<wire x1="119.38" y1="101.6" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="MOTOR4" gate="-1" pin="9"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="-40.64" y1="101.6" x2="-40.64" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <wire x1="53.34" y1="-15.24" x2="53.34" y2="-20.32" width="0.1524" layer="91"/>
@@ -2020,14 +1952,40 @@ D = Direct mounting &lt;p&gt;
 <pinref part="ESTOP" gate="G$1" pin="1"/>
 </segment>
 </net>
+<net name="5V" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="5V"/>
+<wire x1="48.26" y1="-30.48" x2="48.26" y2="-15.24" width="0.1524" layer="91"/>
+<label x="48.26" y="-30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOTOR3" gate="-1" pin="9"/>
+<wire x1="12.7" y1="101.6" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
+<label x="10.16" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOTOR2" gate="-1" pin="9"/>
+<wire x1="66.04" y1="101.6" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
+<label x="63.5" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOTOR1" gate="-1" pin="9"/>
+<wire x1="119.38" y1="101.6" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
+<label x="116.84" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOTOR4" gate="-1" pin="9"/>
+<wire x1="-40.64" y1="101.6" x2="-40.64" y2="93.98" width="0.1524" layer="91"/>
+<label x="-43.18" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,55.88,-15.24,U1,VIN,VCC,,,"/>
+<approved hash="204,1,55.88,-15.24,U1,VIN,,,,"/>
 <approved hash="104,1,53.34,-15.24,U1,GND1,GND,,,"/>
 <approved hash="104,1,50.8,-15.24,U1,GND2,GND,,,"/>
-<approved hash="204,1,48.26,-15.24,U1,5V,,,,"/>
 <approved hash="204,1,45.72,-15.24,U1,3V,,,,"/>
 <approved hash="113,1,112.777,109.22,MOTOR1,,,,,"/>
 <approved hash="113,1,59.4371,109.22,MOTOR2,,,,,"/>
