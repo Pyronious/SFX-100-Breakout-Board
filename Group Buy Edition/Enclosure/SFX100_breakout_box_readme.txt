@@ -1,4 +1,4 @@
-Use this enclosure if your PCB has v1.34 printed on it.
+Use this enclosure if your PCB has v1.34 or 1.35 printed on it.
 
 Recommended print settings for enclosure
 
